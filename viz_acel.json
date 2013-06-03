@@ -1,0 +1,304 @@
+vizjson({
+    "bounds": [
+        [
+            50.33484343945318, 
+            6.94186270236969
+        ], 
+        [
+            50.34253336125945, 
+            6.962118744850159
+        ]
+    ], 
+    "center": "[50.3386885559661, 6.951990723609924]", 
+    "description": null, 
+    "id": "f04c4b46-cc3a-11e2-b1bc-000a27020042", 
+    "layers": [
+        {
+            "id": 1184, 
+            "infowindow": null, 
+            "options": {
+                "base_type": "satellite", 
+                "className": "satellite", 
+                "id": 1184, 
+                "name": "GMaps Satellite", 
+                "order": 0, 
+                "style": [], 
+                "type": "GMapsBase"
+            }, 
+            "order": 0, 
+            "type": "gmapsbase"
+        }, 
+        {
+            "options": {
+                "layer_definition": {
+                    "layers": [
+                        {
+                            "id": 1186, 
+                            "infowindow": {
+                                "fields": [
+                                    {
+                                        "name": "ax", 
+                                        "position": 2, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "ay", 
+                                        "position": 3, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "az", 
+                                        "position": 4, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "dir", 
+                                        "position": 5, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "field_12", 
+                                        "position": 6, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lat", 
+                                        "position": 7, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lon", 
+                                        "position": 8, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "pitch", 
+                                        "position": 9, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "roll", 
+                                        "position": 10, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "time", 
+                                        "position": 11, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "vel", 
+                                        "position": 12, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "yaw", 
+                                        "position": 13, 
+                                        "title": true
+                                    }
+                                ], 
+                                "template": "<div class=\"cartodb-popup\">\n  <a href=\"#close\" class=\"cartodb-popup-close-button close\">x</a>\n  <div class=\"cartodb-popup-content-wrapper\">\n    <div class=\"cartodb-popup-content\">\n      {{#content.fields}}\n        {{#title}}<h4>{{title}}</h4>{{/title}}\n        {{#value}}\n          <p {{#type}}class=\"{{ type }}\"{{/type}}>{{{ value }}}</p>\n        {{/value}}\n        {{^value}}\n          <p class=\"empty\">null</p>\n        {{/value}}\n      {{/content.fields}}\n    </div>\n  </div>\n  <div class=\"cartodb-popup-tip-container\"></div>\n</div>\n", 
+                                "template_name": "table/views/infowindow_light"
+                            }, 
+                            "options": {
+                                "cartocss": "/** simple visualization */\n\n#sensor_log_2013_05_31_16_37{\n  marker-fill: #000000;\n  marker-opacity: 0.9;\n  marker-allow-overlap: true;\n  marker-placement: point;\n  marker-type: ellipse;\n  marker-width: 2;\n  marker-line-width: 0;\n  marker-line-color: #FFF;\n  marker-line-opacity: 0.9;\n}", 
+                                "cartocss_version": "2.1.1", 
+                                "interactivity": "cartodb_id", 
+                                "layer_name": "sensor_log_2013_05_31_16_37", 
+                                "sql": "select * from sensor_log_2013_05_31_16_37"
+                            }, 
+                            "order": 1, 
+                            "type": "CartoDB"
+                        }, 
+                        {
+                            "id": 1185, 
+                            "infowindow": {
+                                "fields": [
+                                    {
+                                        "name": "ax", 
+                                        "position": 2, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "ay", 
+                                        "position": 3, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "az", 
+                                        "position": 4, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "dir", 
+                                        "position": 5, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "field_12", 
+                                        "position": 6, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lat", 
+                                        "position": 7, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lon", 
+                                        "position": 8, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "pitch", 
+                                        "position": 9, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "roll", 
+                                        "position": 10, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "time", 
+                                        "position": 11, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "vel", 
+                                        "position": 12, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "yaw", 
+                                        "position": 13, 
+                                        "title": true
+                                    }
+                                ], 
+                                "template": "<div class=\"cartodb-popup\">\n  <a href=\"#close\" class=\"cartodb-popup-close-button close\">x</a>\n  <div class=\"cartodb-popup-content-wrapper\">\n    <div class=\"cartodb-popup-content\">\n      {{#content.fields}}\n        {{#title}}<h4>{{title}}</h4>{{/title}}\n        {{#value}}\n          <p {{#type}}class=\"{{ type }}\"{{/type}}>{{{ value }}}</p>\n        {{/value}}\n        {{^value}}\n          <p class=\"empty\">null</p>\n        {{/value}}\n      {{/content.fields}}\n    </div>\n  </div>\n  <div class=\"cartodb-popup-tip-container\"></div>\n</div>\n", 
+                                "template_name": "table/views/infowindow_light"
+                            }, 
+                            "options": {
+                                "cartocss": "/** simple visualization */\n\n#sensor_log_2013_05_31_16_37{\n line-color: blue;\n  line-width: 5;\n}", 
+                                "cartocss_version": "2.1.1", 
+                                "interactivity": "cartodb_id", 
+                                "layer_name": "sensor_log_2013_05_31_16_37", 
+                                "sql": "with pos as (\n  select dir*pi()/180.0 as angle,cartodb_id,\n         ay as lateral_gravity,\n   the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   az*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n        az*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(az) > 0.5\n)\n\n\nselect cartodb_id,st_makeline(point, point_ay) as the_geom_webmercator  from pos\n\n\n"
+                            }, 
+                            "order": 2, 
+                            "type": "CartoDB"
+                        }, 
+                        {
+                            "id": 1187, 
+                            "infowindow": {
+                                "fields": [
+                                    {
+                                        "name": "ax", 
+                                        "position": 2, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "ay", 
+                                        "position": 3, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "az", 
+                                        "position": 4, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "dir", 
+                                        "position": 5, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "field_12", 
+                                        "position": 6, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lat", 
+                                        "position": 7, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "lon", 
+                                        "position": 8, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "pitch", 
+                                        "position": 9, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "roll", 
+                                        "position": 10, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "time", 
+                                        "position": 11, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "vel", 
+                                        "position": 12, 
+                                        "title": true
+                                    }, 
+                                    {
+                                        "name": "yaw", 
+                                        "position": 13, 
+                                        "title": true
+                                    }
+                                ], 
+                                "template": "<div class=\"cartodb-popup\">\n  <a href=\"#close\" class=\"cartodb-popup-close-button close\">x</a>\n  <div class=\"cartodb-popup-content-wrapper\">\n    <div class=\"cartodb-popup-content\">\n      {{#content.fields}}\n        {{#title}}<h4>{{title}}</h4>{{/title}}\n        {{#value}}\n          <p {{#type}}class=\"{{ type }}\"{{/type}}>{{{ value }}}</p>\n        {{/value}}\n        {{^value}}\n          <p class=\"empty\">null</p>\n        {{/value}}\n      {{/content.fields}}\n    </div>\n  </div>\n  <div class=\"cartodb-popup-tip-container\"></div>\n</div>\n", 
+                                "template_name": "table/views/infowindow_light"
+                            }, 
+                            "options": {
+                                "cartocss": "/** simple visualization */\n\n#sensor_log_2013_05_31_16_37{\n  line-color: red;\nline-opacity: 0.5;\n  line-width: 5;\n[ay > 0]{\n      line-color: green;\n  }\n}", 
+                                "cartocss_version": "2.1.1", 
+                                "interactivity": "cartodb_id", 
+                                "layer_name": "sensor_log_2013_05_31_16_37", 
+                                "sql": "with pos as (\n  select cartodb_id,dir*pi()/180.0 as angle,\n         ay,\n   the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   ay*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n            ay*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(ay) > 1.0\n)\n\n\nselect ay, cartodb_id,st_makeline(point, point_ay) as the_geom_webmercator  from pos"
+                            }, 
+                            "order": 3, 
+                            "type": "CartoDB"
+                        }
+                    ], 
+                    "version": "1.0.1"
+                }, 
+                "sql_api_domain": "cartodb.com", 
+                "sql_api_endpoint": "/api/v2/sql", 
+                "sql_api_port": 80, 
+                "sql_api_protocol": "http", 
+                "tiler_domain": "cartodb.com", 
+                "tiler_port": "80", 
+                "tiler_protocol": "http", 
+                "user_name": "javi"
+            }, 
+            "type": "layergroup"
+        }
+    ], 
+    "map_provider": "googlemaps", 
+    "overlays": [
+        {
+            "options": null, 
+            "order": null, 
+            "template": "<a class=\"zoom_in\">+</a><a class=\"zoom_out\">-</a>", 
+            "type": "zoom"
+        }, 
+        {
+            "options": null, 
+            "order": null, 
+            "template": "<div class=\"loader\"></div>", 
+            "type": "loader"
+        }
+    ], 
+    "title": "nurbur_acel", 
+    "updated_at": "2013-06-03T15:45:01+02:00", 
+    "url": null, 
+    "version": "0.1.0", 
+    "zoom": 17
+})

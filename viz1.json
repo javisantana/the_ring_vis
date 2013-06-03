@@ -1,0 +1,285 @@
+vizjson({
+  
+    "bounds": [
+        [
+            50.32938167490472,6.881475448608398
+            //50.35132508664647, 
+            //6.980294734239578
+        ], 
+        [
+            50.39085825448094, 7.046270370483398
+            //50.355052499065465, 
+            //6.991806775331497
+        ]
+    ], 
+    "center": "[50.353188829434956, 6.986050754785538]", 
+    "description": "@rochoa va r\u00e1pido, zonas de m\u00e1s de 160 km/h en rojo", 
+    "layers": [
+        {
+            "id": 44991, 
+            "infowindow": null, 
+            "kind": "gmapsbase", 
+            "options": {
+                "base_type": "dark_roadmap", 
+                "className": "dark_roadmap", 
+                "id": 44991, 
+                "name": "GMaps Dark", 
+                "order": 0, 
+                "style": [
+                    {
+                        "featureType": "landscape.natural", 
+                        "stylers": [
+                            {
+                                "gamma": 0.01
+                            }, 
+                            {
+                                "weight": 0.1
+                            }
+                        ]
+                    }, 
+                    {
+                        "stylers": [
+                            {
+                                "saturation": -100
+                            }, 
+                            {
+                                "invert_lightness": true
+                            }, 
+                            {
+                                "gamma": 4.17
+                            }, 
+                            {
+                                "lightness": -87
+                            }
+                        ]
+                    }, 
+                    {
+                        "elementType": "labels", 
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }, 
+                            {
+                                "lightness": 3
+                            }, 
+                            {
+                                "gamma": 1.85
+                            }
+                        ]
+                    }, 
+                    {
+                        "stylers": [
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "road.highway", 
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }, 
+                            {
+                                "weight": 0.3
+                            }
+                        ]
+                    }, 
+                    {
+                        "elementType": "labels.icon", 
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "road.arterial", 
+                        "stylers": [
+                            {
+                                "weight": 0.3
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "administrative.neighborhood", 
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "administrative.locality", 
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    }, 
+                    {
+                        "elementType": "labels", 
+                        "featureType": "poi", 
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "poi", 
+                        "stylers": [
+                            {
+                                "lightness": 4
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "administrative", 
+                        "stylers": [
+                            {
+                                "lightness": 14
+                            }, 
+                            {
+                                "weight": 0.8
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "landscape.man_made", 
+                        "stylers": [
+                            {
+                                "lightness": 13
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "road.local", 
+                        "stylers": [
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    }, 
+                    {
+                        "featureType": "road.highway", 
+                        "stylers": [
+                            {
+                                "weight": 0.3
+                            }
+                        ]
+                    }
+                ], 
+                "type": "GMapsBase"
+            }, 
+            "order": 0
+        }, 
+        {
+            "id": 44992, 
+            "infowindow": {
+                "fields": [
+                    {
+                        "name": "ax", 
+                        "position": 2, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "ay", 
+                        "position": 3, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "az", 
+                        "position": 4, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "dir", 
+                        "position": 5, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "lat", 
+                        "position": 6, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "lon", 
+                        "position": 7, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "pitch", 
+                        "position": 8, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "roll", 
+                        "position": 9, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "time", 
+                        "position": 10, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "vel", 
+                        "position": 11, 
+                        "title": true
+                    }, 
+                    {
+                        "name": "yaw", 
+                        "position": 12, 
+                        "title": true
+                    }
+                ], 
+                "template": "<div class=\"cartodb-popup\">\n  <a href=\"#close\" class=\"cartodb-popup-close-button close\">x</a>\n  <div class=\"cartodb-popup-content-wrapper\">\n    <div class=\"cartodb-popup-content\">\n      {{#content.fields}}\n        {{#title}}<h4>{{title}}</h4>{{/title}}\n        {{#value}}\n          <p {{#type}}class=\"{{ type }}\"{{/type}}>{{{ value }}}</p>\n        {{/value}}\n        {{^value}}\n          <p class=\"empty\">null</p>\n        {{/value}}\n      {{/content.fields}}\n    </div>\n  </div>\n  <div class=\"cartodb-popup-tip-container\"></div>\n</div>\n", 
+                "template_name": "table/views/infowindow_light"
+            }, 
+            "kind": "carto", 
+            "options": {
+                "active": true, 
+                "auto_bound": false, 
+                "cdn_url": "", 
+                "debug": false, 
+                "extra_params": {
+                    "cache_buster": 1370268523200, 
+                    "cache_policy": "persist"
+                }, 
+                "interactivity": "cartodb_id", 
+                "opacity": 0.99, 
+                "query_wrapper": null, 
+                "sql_domain": "cartodb.com", 
+                "sql_port": "443", 
+                "sql_protocol": "https", 
+                "style_version": "2.1.1", 
+                "table_name": "car_log_nurburgring_2013_05_30", 
+                "tiler_domain": "cartodb.com", 
+                "tiler_port": "80", 
+                "tiler_protocol": "https", 
+                "type": "CartoDB", 
+                "user_name": "javi", 
+                "tile_style": "#car_log_nurburgring_2013_05_30{ marker-fill: #FFCC00; marker-opacity: 0.3; marker-allow-overlap: true; marker-placement: point; marker-type: ellipse; marker-width: [vel]*[vel]*0.0006; marker-line-width: 3; marker-line-color: #EEE; marker-line-opacity: 0.9; marker-comp-op: multiply; [vel > 160 ] { marker-fill:red; marker-opacity: 0.8; } }",
+                "visible": true
+            }, 
+            "order": 1
+        }
+    ], 
+    "map_provider": "googlemaps", 
+    "overlays": [
+        {
+            "template": "<a class=\"zoom_in\">+</a><a class=\"zoom_out\">-</a>", 
+            "type": "zoom"
+        }, 
+        {
+            "template": "<div class=\"loader\"></div>", 
+            "type": "loader"
+        }
+    ], 
+    "title": "car_log_nurburgring_2013_05_30", 
+    "updated_at": "2013-06-03T16:08:40+02:00", 
+    "url": "http://javi.cartodb.com/tables/30940", 
+    "version": "0.1.0", 
+    "zoom": 18
+});
