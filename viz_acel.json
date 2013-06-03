@@ -57,31 +57,6 @@ vizjson({
                                         "title": true
                                     }, 
                                     {
-                                        "name": "field_12", 
-                                        "position": 6, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lat", 
-                                        "position": 7, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lon", 
-                                        "position": 8, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "pitch", 
-                                        "position": 9, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "roll", 
-                                        "position": 10, 
-                                        "title": true
-                                    }, 
-                                    {
                                         "name": "time", 
                                         "position": 11, 
                                         "title": true
@@ -89,11 +64,6 @@ vizjson({
                                     {
                                         "name": "vel", 
                                         "position": 12, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "yaw", 
-                                        "position": 13, 
                                         "title": true
                                     }
                                 ], 
@@ -135,31 +105,6 @@ vizjson({
                                         "title": true
                                     }, 
                                     {
-                                        "name": "field_12", 
-                                        "position": 6, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lat", 
-                                        "position": 7, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lon", 
-                                        "position": 8, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "pitch", 
-                                        "position": 9, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "roll", 
-                                        "position": 10, 
-                                        "title": true
-                                    }, 
-                                    {
                                         "name": "time", 
                                         "position": 11, 
                                         "title": true
@@ -167,11 +112,6 @@ vizjson({
                                     {
                                         "name": "vel", 
                                         "position": 12, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "yaw", 
-                                        "position": 13, 
                                         "title": true
                                     }
                                 ], 
@@ -183,7 +123,7 @@ vizjson({
                                 "cartocss_version": "2.1.1", 
                                 "interactivity": "cartodb_id", 
                                 "layer_name": "sensor_log_2013_05_31_16_37", 
-                                "sql": "with pos as (\n  select dir*pi()/180.0 as angle,cartodb_id,\n         ay as lateral_gravity,\n   the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   az*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n        az*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(az) > 0.5\n)\n\n\nselect cartodb_id,st_makeline(point, point_ay) as the_geom_webmercator  from pos\n\n\n"
+                                "sql": "with pos as (\n  select *,\n   the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   az*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n        az*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(az) > 0.5\n)\n\n\nselect cartodb_id, ax, ay, az, dir, time, vel,st_makeline(point, point_ay) as the_geom_webmercator  from pos\n\n\n"
                             }, 
                             "order": 2, 
                             "type": "CartoDB"
@@ -213,31 +153,6 @@ vizjson({
                                         "title": true
                                     }, 
                                     {
-                                        "name": "field_12", 
-                                        "position": 6, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lat", 
-                                        "position": 7, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "lon", 
-                                        "position": 8, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "pitch", 
-                                        "position": 9, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "roll", 
-                                        "position": 10, 
-                                        "title": true
-                                    }, 
-                                    {
                                         "name": "time", 
                                         "position": 11, 
                                         "title": true
@@ -245,11 +160,6 @@ vizjson({
                                     {
                                         "name": "vel", 
                                         "position": 12, 
-                                        "title": true
-                                    }, 
-                                    {
-                                        "name": "yaw", 
-                                        "position": 13, 
                                         "title": true
                                     }
                                 ], 
@@ -261,7 +171,7 @@ vizjson({
                                 "cartocss_version": "2.1.1", 
                                 "interactivity": "cartodb_id", 
                                 "layer_name": "sensor_log_2013_05_31_16_37", 
-                                "sql": "with pos as (\n  select cartodb_id,dir*pi()/180.0 as angle,\n         ay,\n   the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   ay*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n            ay*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(ay) > 1.0\n)\n\n\nselect ay, cartodb_id,st_makeline(point, point_ay) as the_geom_webmercator  from pos"
+                                "sql": "with pos as (\n  select *,dir*pi()/180.0 as angle, the_geom_webmercator as point,\n   st_setsrid(\n           st_makepoint(\n        st_x(the_geom_webmercator) -\n   ay*10*cos((-dir )*pi()/180.0),\n            st_y(the_geom_webmercator) -\n            ay*10*sin((-dir)*pi()/180.0)\n           ),\n           3857\n         ) as point_ay\n  \n  \n  from sensor_log_2013_05_31_16_37 where abs(ay) > 1.0\n)\n\n\nselect ax, ay, az, dir, time, vel, cartodb_id,st_makeline(point, point_ay) as the_geom_webmercator  from pos"
                             }, 
                             "order": 3, 
                             "type": "CartoDB"
