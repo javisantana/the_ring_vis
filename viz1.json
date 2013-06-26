@@ -257,7 +257,7 @@ vizjson({
                 "table_name": "car_log_nurburgring_2013_05_30", 
                 "tiler_domain": "cartodb.com", 
                 "tiler_port": "80", 
-                "tiler_protocol": "https", 
+                "tiler_protocol": "http", 
                 "type": "CartoDB", 
                 "user_name": "javi", 
                 "tile_style": "#car_log_nurburgring_2013_05_30{ marker-fill: #FFCC00; marker-opacity: 0.3; marker-allow-overlap: true; marker-placement: point; marker-type: ellipse; marker-width: [vel]*[vel]*0.0006; marker-line-width: 3; marker-line-color: #EEE; marker-line-opacity: 0.9; marker-comp-op: multiply; [vel > 160 ] { marker-fill:red; marker-opacity: 0.8; } }",
