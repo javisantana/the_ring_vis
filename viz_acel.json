@@ -74,9 +74,9 @@ vizjson({
                                 //"cartocss": "/** simple visualization */\n\n#sensor_log_2013_05_31_16_37{\n  marker-fill: #000000;\n  marker-opacity: 0.9;\n  marker-allow-overlap: true;\n  marker-placement: point;\n  marker-type: ellipse;\n  marker-width: 5;\n  marker-line-width: 0;\n  marker-line-color: #FFF;\n  marker-line-opacity: 0.9;\n}", 
                                 "cartocss": "#sensor_log_2013_05_31_16_37{\n line-color: #000; line-width: 3;}", 
                                 "cartocss_version": "2.1.1", 
-                                "interactivity": "cartodb_id", 
+                                "interactivity": "", 
                                 "layer_name": "sensor_log_2013_05_31_16_37", 
-                                "sql": "select st_makeline(the_geom_webmercator) as the_geom_webmercator from (select cartodb_id, the_geom_webmercator from sensor_log_2013_05_31_16_37 order by cartodb_id) a"
+                                "sql": "select  st_makeline(the_geom_webmercator) as the_geom_webmercator from (select cartodb_id, the_geom_webmercator from sensor_log_2013_05_31_16_37 order by cartodb_id) a"
                             }, 
                             "order": 1, 
                             "type": "CartoDB"

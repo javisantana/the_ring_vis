@@ -87,8 +87,7 @@ In this second map you can see the speed heatmap over the circuit. There are two
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
     <script type="text/javascript">
-      /*cartodb.createVis('map', './viz1.json');
-        */
+      cartodb.createVis('map', './viz1.json');
       cartodb.createVis('map_acel', './viz_acel.json', function(vis) {
           vis.addOverlay({
             type: 'layer_selector',
